@@ -3,6 +3,7 @@ import streamlit.components.v1 as stc
 import xgboost
 import pandas as pd
 import numpy as np
+import imblearn
 import cloudpickle
 
 with open("XGBoost_Model.pkl","rb") as f :
@@ -126,6 +127,7 @@ def predict(capital_gain, capital_loss, race, gender,
 if __name__ == "__main__":
 
     main()
+
 
 
 
