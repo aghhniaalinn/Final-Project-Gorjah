@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as stc
 import xgboost
-import pickel
+import pickle
 
 with open("XGBoost.pkl","rb") as f :
   XGBoost_Model = pickle.load(f)
@@ -124,6 +124,7 @@ def predict(capital_gain, capital_loss, race, gender,
 if __name__ == "__main__":
 
     main()
+
 
 
 
