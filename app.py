@@ -1,10 +1,10 @@
 import streamlit as st
 import streamlit.components.v1 as stc
 import xgboost
-import pickle
+import cloudpickle
 
-with open("XGBoost.pkl","rb") as f :
-  XGBoost_Model = pickle.load(f)
+with open("XGBoost_Model.pkl","rb") as f :
+  XGBoost_Model = cloudpickle.load(f)
 
 html_temp = """<div style="background-color:#000;padding:10px;border-radius:10px">
                 <h1 style="color:#fff;text-align:center">Loan Eligibility Prediction App</h1> 
@@ -124,6 +124,7 @@ def predict(capital_gain, capital_loss, race, gender,
 if __name__ == "__main__":
 
     main()
+
 
 
 
