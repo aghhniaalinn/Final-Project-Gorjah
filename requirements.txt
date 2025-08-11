@@ -4,5 +4,7 @@ xgboost == 1.7.6
 cloudpickle == 2.2.1
 pandas
 numpy
+imbalanced-learn == 0.12.3
+
 
 
